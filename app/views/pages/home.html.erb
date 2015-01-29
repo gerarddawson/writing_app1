@@ -6,6 +6,9 @@
 		<li>What didn't?
 		<li>What next?
 	</ul>
-	<%= link_to "Start reflecting", "#", class: "btn btn-primary btn-lg" %>
-	
+	<% if user_signed_in? %>
+		<%= link_to "Start reflecting", "#", class: "btn btn-primary btn-lg" %>
+	<% else %>
+		<%= link_to "Start reflecting", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+	<% end %>	
 </div>

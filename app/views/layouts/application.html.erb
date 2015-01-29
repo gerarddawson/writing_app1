@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><script src="//load.sumome.com/" data-sumo-site-id="49d4f9abc3ae1381bd131cc0a5ffd5c141964c60601fcbf4d95d1229ee67f5de" async></script>
   <title>Reflective Teacher</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -12,6 +12,9 @@
 
 		<%= render 'layouts/header' %>
      <div class="container">
+     	<% flash.each do |name, msg| %>
+     		<%= content_tag(:div, msg, class: "alert alter-#{name}") %>
+ 			<% end %>
           <%= yield %>
      </div>
 

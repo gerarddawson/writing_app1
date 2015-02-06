@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+
+ #header {
+ 	height: 1000px;
+ }
+
+ #about-section {
+ 	height: 1000px;
+ 	background-color: #ecf0f1;
+ 	color: #f39c12;
+ }
+
+ #title {
+ 	font-size: 750%;
+ 	text-align: center;
+ 	color: #ecf0f1;
+ }
+
+ #slogan-home {
+ 	text-align: center;
+ 	font-size: 150%;
+ 	color: #f1c40f;
+ }

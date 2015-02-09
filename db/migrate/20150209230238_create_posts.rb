@@ -2,9 +2,8 @@ class CreatePosts < ActiveRecord::Migration
   def change
     create_table :posts do |t|
       t.string :title
-      t.text :worked
-      t.text :didnt
-      t.text :next
+      t.text :content
+      t.integer :user_id
 
       t.timestamps null: false
     end

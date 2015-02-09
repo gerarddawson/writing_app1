@@ -3,11 +3,21 @@
 <div id="header">
 	
 	<div id="title"></h1>Reflective Teachers</h1></div>
-		<div id="slogan-home"><p>Empower your teaching with the PD you want</p></div>
+		<div id="slogan-home"><p>Empower your teaching with the PD you want</p><br><br>
+		<%= link_to "View Our Courses", courses_path, :class => "btn-lg btn-primary" %></div>
 </div>
 
 <div id="about-section">
-	About us
+	<div class="title">About us</div>
+	<%= image_tag("typing-background.jpg", :alt => "#", class:"img-circle pull-right", width:"30%") %>
+	<%= image_tag("typing-background.jpg", :alt => "#", class:"img-circle pull-left", width:"30%") %>
+	<%= image_tag("typing-background.jpg", :alt => "#", class:"img-circle center-block", width:"30%") %><br>
+	<ul class="list-inline">
+  <li class="col-md-4">    Gerard Dawson</li>
+  <li class="col-md-4">    Carolyn Ross</li>
+  <li class="col-md-4">    Kathryn Cubano</li>
+</ul>
+
 </div>
 
 

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   resources :posts, path: "/blog"
+  resources :users
 
   devise_for :users
   get 'pages/home'
